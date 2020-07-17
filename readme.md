@@ -9,6 +9,10 @@
 ```bash
 npm i -g awesome-test-cli
 ```
+🍎 或者link到本地
+```bash
+npm link
+```
 
 🍏 使用脚手架创建项目
 

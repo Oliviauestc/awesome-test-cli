@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 // 检测node版本相关依赖
-const chalk = require('chalk')
+const chalk = require('chalk') // 终端样式
 const semver = require('semver')
 const requiredVersion = require('../package.json').engines.node
 
@@ -22,7 +22,7 @@ function checkNodeVersion (wanted, id) {
 }
 
 checkNodeVersion(requiredVersion, 'awesome-test-cli')
-
+    
 if (semver.satisfies(process.version, '9.x')) {
   console.log(chalk.red(
     `你是用的Node版本是 ${process.version}.\n` +
